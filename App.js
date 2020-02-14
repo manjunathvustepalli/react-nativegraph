@@ -35,7 +35,7 @@ export default class FetchExample extends React.Component {
     let c=[];
     let d=[];
     try {
-      const response = await fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&apikey=776BOHXHC4RTWISC');
+      const response = await fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&apikey=null');
       const responseJson = await response.json();
       let i = 0;
       for (var key in responseJson["Time Series (Daily)"]) {
